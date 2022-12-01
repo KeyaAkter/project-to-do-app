@@ -58,7 +58,7 @@ const App = () => {
   // Delete Data Function
 
   const deleteData = async (id) => {
-    await fetch("https://hallowed-ambitious-mouth.glitch.me/tasks/${id}", {
+    await fetch(`https://hallowed-ambitious-mouth.glitch.me/tasks/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
@@ -109,7 +109,7 @@ const App = () => {
   };
 
   const puttingRequest = async (id, newData) => {
-    fetch("https://hallowed-ambitious-mouth.glitch.me/tasks/${id}", {
+    fetch(`https://hallowed-ambitious-mouth.glitch.me/tasks/${id}`, {
       method: "PUT",
       headers: {
         "Content-type": "application/json",
